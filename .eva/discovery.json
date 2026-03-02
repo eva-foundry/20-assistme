@@ -1,0 +1,749 @@
+{
+  "meta": {
+    "schema": "eva.discovery.v2",
+    "generated_at": "2026-02-25T06:37:16.139Z",
+    "repo": "C:\\AICOE\\eva-foundation\\20-AssistMe"
+  },
+  "project": null,
+  "planned": {
+    "epic": {
+      "title": "EVA DA XML Ingestion Evidence System",
+      "source": "README.md"
+    },
+    "features": [
+      {
+        "id": "F20-01",
+        "title": "Overview",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-02",
+        "title": "?? Structure",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-03",
+        "title": "?? Quick Start",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-04",
+        "title": "?? Documentation",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-05",
+        "title": "?? Evidence Sources",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-06",
+        "title": "? What This System Proves",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-07",
+        "title": "??? Troubleshooting",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-08",
+        "title": "?? Workflow: From Evidence to Conclusion",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-09",
+        "title": "?? Next Steps",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-10",
+        "title": "?? Additional Resources",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-11",
+        "title": "?? Contributing",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-12",
+        "title": "?? Maintenance",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "stories": [
+      {
+        "id": "F20-03-001",
+        "title": "1. Install Dependencies",
+        "feature_id": "F20-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-03-002",
+        "title": "2. Run Evidence Collection",
+        "feature_id": "F20-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-03-003",
+        "title": "3. Review Evidence",
+        "feature_id": "F20-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-03-004",
+        "title": "4. Update Main Report",
+        "feature_id": "F20-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-04-001",
+        "title": "Main Documents",
+        "feature_id": "F20-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-04-002",
+        "title": "Script Documentation",
+        "feature_id": "F20-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-05-001",
+        "title": "Azure Resources",
+        "feature_id": "F20-05",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-05-002",
+        "title": "Code Analysis",
+        "feature_id": "F20-05",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-06-001",
+        "title": "1. How AssistMe XML Was Ingested (November 2025)",
+        "feature_id": "F20-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-06-002",
+        "title": "2. What EVA DA Does with XML",
+        "feature_id": "F20-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-06-003",
+        "title": "3. Why New XML Fails",
+        "feature_id": "F20-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-07-001",
+        "title": "No Results from Scripts",
+        "feature_id": "F20-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-07-002",
+        "title": "Authentication Errors",
+        "feature_id": "F20-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-07-003",
+        "title": "Missing Environment Variables",
+        "feature_id": "F20-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F20-09-001",
+        "title": "For Your Investigation",
+        "feature_id": "F20-09",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "tasks": [],
+    "acceptance": [],
+    "declared_status": {}
+  },
+  "actual": {
+    "artifacts": [
+      {
+        "path": ".gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "ASSISTME-XML-EVIDENCE-FINAL.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ASSISTME-XML-FORENSIC-CODE-ANALYSIS.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "assistme-xml-ingestion-proof.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "crawl_kmt_inventory.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "evidence-analysis-20260124.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "IMPLEMENTATION-SUMMARY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "KMT-DATABASE-INVENTORY-COMPLETE.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "KMT-NAVIGATION-DISCOVERY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "knowledge_articles_r2r3_en 2.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "knowledge_articles_r2r3_en.csv",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "knowledge_articles_r2r3_fr.csv",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "knowledge_articles_r2r3_FR.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "PILOT-TEST-FINDINGS.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "PLAN.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "QUICK-REFERENCE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "WEBSITE-DISCOVERY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "XML-GENERATION-PLAN.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "xml-output-contract.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "XML-STRUCTURE-ANALYSIS.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "xml-validation-checklist.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "capture-logs/evidence_capture_summary_20260123_223739.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081708_assistme_search_hits.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081708_assistme_search_report.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081708_assistme_search_schema.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081758_assistme_search_hits.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081758_assistme_search_report.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081758_assistme_search_schema.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081811_assistme_statuslog.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "out/20260121_081811_assistme_statuslog_report.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "output/KA-03201-extracted.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/Fetch-KMT-Articles-Full.ps1",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/Run-Pilot-Test.ps1",
+        "type": "code",
+        "story_tags": [
+          "F20-03-001",
+          "F20-03-002",
+          "F20-03-003",
+          "F20-03-004",
+          "F20-04-001",
+          "F20-04-002",
+          "F20-05-001",
+          "F20-05-002",
+          "F20-06-001",
+          "F20-06-002",
+          "F20-06-003",
+          "F20-07-001",
+          "F20-07-002",
+          "F20-07-003",
+          "F20-09-001"
+        ]
+      },
+      {
+        "path": "output/pilot/pilot-articles-en.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "output/pilot/pilot-articles-fr.json",
+        "type": "data",
+        "story_tags": []
+      }
+    ],
+    "story_artifact_map": {
+      "F20-03-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-03-002": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-03-003": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-03-004": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-04-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-04-002": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-05-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-05-002": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-06-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-06-002": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-06-003": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-07-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-07-002": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-07-003": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      },
+      "F20-09-001": {
+        "artifacts": [
+          {
+            "path": "scripts/Run-Pilot-Test.ps1",
+            "type": "code",
+            "story_tags": [
+              "F20-03-001",
+              "F20-03-002",
+              "F20-03-003",
+              "F20-03-004",
+              "F20-04-001",
+              "F20-04-002",
+              "F20-05-001",
+              "F20-05-002",
+              "F20-06-001",
+              "F20-06-002",
+              "F20-06-003",
+              "F20-07-001",
+              "F20-07-002",
+              "F20-07-003",
+              "F20-09-001"
+            ]
+          }
+        ]
+      }
+    },
+    "commit_evidence_map": {}
+  }
+}

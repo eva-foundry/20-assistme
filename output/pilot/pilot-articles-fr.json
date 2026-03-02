@@ -1,0 +1,92 @@
+{
+  "articles": [
+    {
+      "date_created": "",
+      "title": "Knowledge Base - Article Redirector&nbsp;&middot; Pensions Knowledge",
+      "pid": "KA-01215",
+      "content": "",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01215",
+      "fetch_timestamp": "2026-01-30T18:10:28",
+      "date_modified": "",
+      "summary": "",
+      "tags": [],
+      "raw_html_length": 34194,
+      "categories": [],
+      "author": ""
+    },
+    {
+      "date_created": "",
+      "title": "Knowledge Base - Article Redirector&nbsp;&middot; Pensions Knowledge",
+      "pid": "KA-01347",
+      "content": "",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01347",
+      "fetch_timestamp": "2026-01-30T18:10:30",
+      "date_modified": "",
+      "summary": "",
+      "tags": [],
+      "raw_html_length": 34194,
+      "categories": [],
+      "author": ""
+    },
+    {
+      "date_created": "",
+      "title": "Knowledge Base - Article Redirector&nbsp;&middot; Pensions Knowledge",
+      "pid": "KA-01135",
+      "content": "",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01135",
+      "fetch_timestamp": "2026-01-30T18:10:31",
+      "date_modified": "",
+      "summary": "",
+      "tags": [],
+      "raw_html_length": 34194,
+      "categories": [],
+      "author": ""
+    },
+    {
+      "date_created": "",
+      "title": "Knowledge Base - Article Redirector&nbsp;&middot; Pensions Knowledge",
+      "pid": "KA-05215",
+      "content": "",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-05215",
+      "fetch_timestamp": "2026-01-30T18:10:32",
+      "date_modified": "",
+      "summary": "",
+      "tags": [],
+      "raw_html_length": 34194,
+      "categories": [],
+      "author": ""
+    }
+  ],
+  "metadata": {
+    "execution_time_seconds": 5.4,
+    "success_rate": 0.0,
+    "language": "fr",
+    "generated": "2026-01-30T18:10:33",
+    "pilot_mode": true,
+    "fail_count": 4,
+    "total_articles": 4,
+    "success_count": 0
+  },
+  "failed_articles": [
+    {
+      "reason": "Incomplete extraction: Title=True, Content=False",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01215",
+      "pid": "KA-01215"
+    },
+    {
+      "reason": "Incomplete extraction: Title=True, Content=False",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01347",
+      "pid": "KA-01347"
+    },
+    {
+      "reason": "Incomplete extraction: Title=True, Content=False",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-01135",
+      "pid": "KA-01135"
+    },
+    {
+      "reason": "Incomplete extraction: Title=True, Content=False",
+      "url": "https://kmt-ogc.service.gc.ca/fr/knowledgebase/article-latest?pid=KA-05215",
+      "pid": "KA-05215"
+    }
+  ]
+}

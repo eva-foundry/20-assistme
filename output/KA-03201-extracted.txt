@@ -1,0 +1,80 @@
+================================================================================
+KMT ARTICLE EXTRACTION
+================================================================================
+
+Article ID: KA-03201
+Category ID: CAT-01912
+URL: https://kmt-ogc.service.gc.ca/en/knowledgebase/kbarticle/?id=7f02149d-a486-eb11-812c-005056b029f4&pid=KA-03201&cid=CAT-01912
+Extraction Date: January 30, 2026
+
+================================================================================
+ARTICLE METADATA
+================================================================================
+
+Public Number: KA-03201
+Version: 1.2
+Status: Published
+Published Date: 2022/01/27
+Archived: No
+Category: System Actions (CAT-01912)
+
+================================================================================
+ARTICLE TITLE
+================================================================================
+
+Cross Program Receivable—Modify the Recovery Rate or Start Date in CPMS (Action)
+
+================================================================================
+ARTICLE CONTENT
+================================================================================
+
+--- OVERVIEW ---
+
+Summary:
+Modify the recovery rate and start date of a cross program receivable in CPMS.
+
+What you need to know:
+The information will display on the Cross Program Receivables Summary screen. If
+the modifications are current dated, the Recovery Rate displays the new rate and 
+the Start Date will be the current accounting month. If the modifications are 
+future dated, the Recovery Rate and Start Date remain the same and the Future 
+Start Date and Future Rate will display in accordance with the information entered.
+
+--- SECTIONS ---
+
+1. Step by Step
+2. References
+3. Previous Versions
+
+================================================================================
+ADDITIONAL METADATA
+================================================================================
+
+Common Effective Date: [Not specified in extraction]
+
+Related Links:
+- Home: https://kmt-ogc.service.gc.ca/
+- System Actions Category: https://kmt-ogc.service.gc.ca/category/?id=CAT-01912
+- Benefits ToolBox: https://kmt-ogc.service.gc.ca/knowledgebase/article-latest?pid=KA-01960
+
+================================================================================
+EXTRACTION NOTES
+================================================================================
+
+This article is from the CPMS (Canada Pension Management System) knowledge base.
+The article provides procedural guidance for modifying cross program receivable
+parameters within CPMS.
+
+Content sections detected:
+- Overview (Summary and background information)
+- Step by Step (Procedural instructions - content not fully rendered in extraction)
+- References (Supporting documentation)
+- Previous Versions (Version history)
+
+Note: Some detailed procedural steps may require JavaScript rendering to fully display.
+This extraction captured the article metadata, title, summary, and structural elements
+that were available in the initial page load.
+
+================================================================================
+END OF EXTRACTION
+================================================================================

@@ -1,0 +1,194 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T06:37:15.672Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F20",
+  "features": [
+    {
+      "id": "F20-01",
+      "title": "Overview",
+      "source_heading": "## Feature: Overview [ID=F20-01]",
+      "stories": []
+    },
+    {
+      "id": "F20-02",
+      "title": "?? Structure",
+      "source_heading": "## Feature: ?? Structure [ID=F20-02]",
+      "stories": []
+    },
+    {
+      "id": "F20-03",
+      "title": "?? Quick Start",
+      "source_heading": "## Feature: ?? Quick Start [ID=F20-03]",
+      "stories": [
+        {
+          "id": "F20-03-001",
+          "title": "1. Install Dependencies",
+          "feature_id": "F20-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-03-002",
+          "title": "2. Run Evidence Collection",
+          "feature_id": "F20-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-03-003",
+          "title": "3. Review Evidence",
+          "feature_id": "F20-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-03-004",
+          "title": "4. Update Main Report",
+          "feature_id": "F20-03",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-04",
+      "title": "?? Documentation",
+      "source_heading": "## Feature: ?? Documentation [ID=F20-04]",
+      "stories": [
+        {
+          "id": "F20-04-001",
+          "title": "Main Documents",
+          "feature_id": "F20-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-04-002",
+          "title": "Script Documentation",
+          "feature_id": "F20-04",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-05",
+      "title": "?? Evidence Sources",
+      "source_heading": "## Feature: ?? Evidence Sources [ID=F20-05]",
+      "stories": [
+        {
+          "id": "F20-05-001",
+          "title": "Azure Resources",
+          "feature_id": "F20-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-05-002",
+          "title": "Code Analysis",
+          "feature_id": "F20-05",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-06",
+      "title": "? What This System Proves",
+      "source_heading": "## Feature: ? What This System Proves [ID=F20-06]",
+      "stories": [
+        {
+          "id": "F20-06-001",
+          "title": "1. How AssistMe XML Was Ingested (November 2025)",
+          "feature_id": "F20-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-06-002",
+          "title": "2. What EVA DA Does with XML",
+          "feature_id": "F20-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-06-003",
+          "title": "3. Why New XML Fails",
+          "feature_id": "F20-06",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-07",
+      "title": "??? Troubleshooting",
+      "source_heading": "## Feature: ??? Troubleshooting [ID=F20-07]",
+      "stories": [
+        {
+          "id": "F20-07-001",
+          "title": "No Results from Scripts",
+          "feature_id": "F20-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-07-002",
+          "title": "Authentication Errors",
+          "feature_id": "F20-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F20-07-003",
+          "title": "Missing Environment Variables",
+          "feature_id": "F20-07",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-08",
+      "title": "?? Workflow: From Evidence to Conclusion",
+      "source_heading": "## Feature: ?? Workflow: From Evidence to Conclusion [ID=F20-08]",
+      "stories": []
+    },
+    {
+      "id": "F20-09",
+      "title": "?? Next Steps",
+      "source_heading": "## Feature: ?? Next Steps [ID=F20-09]",
+      "stories": [
+        {
+          "id": "F20-09-001",
+          "title": "For Your Investigation",
+          "feature_id": "F20-09",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F20-10",
+      "title": "?? Additional Resources",
+      "source_heading": "## Feature: ?? Additional Resources [ID=F20-10]",
+      "stories": []
+    },
+    {
+      "id": "F20-11",
+      "title": "?? Contributing",
+      "source_heading": "## Feature: ?? Contributing [ID=F20-11]",
+      "stories": []
+    },
+    {
+      "id": "F20-12",
+      "title": "?? Maintenance",
+      "source_heading": "## Feature: ?? Maintenance [ID=F20-12]",
+      "stories": []
+    }
+  ]
+}

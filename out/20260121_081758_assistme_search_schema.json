@@ -1,0 +1,189 @@
+{
+  "proj1-index": {
+    "index_name": "proj1-index",
+    "fields": [
+      {
+        "name": "id",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true
+      },
+      {
+        "name": "file_name",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "file_uri",
+        "type": "Edm.String",
+        "searchable": false,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "processed_datetime",
+        "type": "Edm.DateTimeOffset",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": false
+      },
+      {
+        "name": "chunk_file",
+        "type": "Edm.String",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": false
+      },
+      {
+        "name": "file_class",
+        "type": "Edm.String",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true
+      },
+      {
+        "name": "folder",
+        "type": "Edm.String",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true
+      },
+      {
+        "name": "tags",
+        "type": "Collection(Edm.String)",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": true
+      },
+      {
+        "name": "pages",
+        "type": "Collection(Edm.Int32)",
+        "searchable": false,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "title",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "translated_title",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "content",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "entities",
+        "type": "Collection(Edm.String)",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "key_phrases",
+        "type": "Collection(Edm.String)",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "contentVector",
+        "type": "Collection(Edm.Single)",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false
+      },
+      {
+        "name": "full_html",
+        "type": "Edm.String",
+        "searchable": false,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": false
+      }
+    ],
+    "searchable_fields": [
+      "id",
+      "file_name",
+      "title",
+      "translated_title",
+      "content",
+      "entities",
+      "key_phrases",
+      "contentVector"
+    ],
+    "filterable_fields": [
+      "id",
+      "file_name",
+      "processed_datetime",
+      "chunk_file",
+      "file_class",
+      "folder",
+      "tags",
+      "full_html"
+    ],
+    "retrievable_fields": [
+      "id",
+      "file_name",
+      "file_uri",
+      "processed_datetime",
+      "chunk_file",
+      "file_class",
+      "folder",
+      "tags",
+      "pages",
+      "title",
+      "translated_title",
+      "content",
+      "entities",
+      "key_phrases",
+      "contentVector",
+      "full_html"
+    ]
+  }
+}
