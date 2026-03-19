@@ -1,0 +1,9 @@
+{
+    "component":  "artifact-deployment",
+    "timestamp":  "2026-03-10T08:40:05.9520414-03:00",
+    "checkpoint_id":  "paths_validated",
+    "data":  {
+                 "target_path":  "C:\\eva-foundry\\eva-foundry\\20-assistme",
+                 "dry_run":  false
+             }
+}

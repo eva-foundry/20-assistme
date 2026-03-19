@@ -1,0 +1,159 @@
+# GitHub Copilot Instructions -- {PROJECT_NAME}
+
+**Template Version**: 4.3.0 (Session 43 - Category Runbooks + API-Only Architecture)
+**Last Updated**: 2026-03-10 06:06 ET
+**Project**: {PROJECT_NAME}
+**Path**: `C:\eva-foundry\{PROJECT_FOLDER}\`
+**Stack**: {PROJECT_STACK}
+
+---
+
+## PART 1 -- UNIVERSAL RULES (EVA Foundation)
+
+Applies to every EVA Foundation project. All project templates share these rules; see workspace copilot-instructions for details.
+
+### Essential References (Read in Order)
+
+1. **Workspace Context**: `C:\eva-foundry\.github\copilot-instructions.md`
+   - Skills available, architecture overview, key projects
+2. **Best Practices**: `C:\eva-foundry\.github\best-practices-reference.md`
+   - Encoding safety, patterns, evidence collection
+3. **Data Model API**: `C:\eva-foundry\37-data-model\USER-GUIDE.md`
+   - Query patterns, PUT rules, 111 target layers (91 operational + 20 planned)
+4. **This Project**: README.md -> PLAN.md -> STATUS.md -> ACCEPTANCE.md
+
+### Session Bootstrap (Checklist)
+
+This sequence runs ONCE per agent session and establishes `$session` with API guidance.
+
+```powershell
+# Step 1: Set base URL
+$base = "https://msub-eva-data-model.victoriousgrass-30debbd3.canadacentral.azurecontainerapps.io"
+
+# Step 2: Create session object
+$session = @{ base = $base; initialized_at = Get-Date }
+
+# Step 3: Bootstrap from API (<-- KEY STEP)
+try {
+    $session.guide = Invoke-RestMethod "$base/model/agent-guide" -TimeoutSec 10
+    $session.userGuide = Invoke-RestMethod "$base/model/user-guide" -TimeoutSec 10
+    [INFO] "Bootstrap complete. $(($session.guide.layers_available | Measure-Object).Count) layers online."
+} catch {
+    [FAIL] "Cannot contact MSub API at $base. Exiting."
+    exit 1
+}
+
+# Step 4: Verify 91 operational layers available
+$layerCount = ($session.guide.layers_available | Measure-Object).Count
+if ($layerCount -lt 91) {
+    [WARN] "Expected 91+ layers; API reports $layerCount. Some features may be unavailable."
+}
+
+# Step 5: Read project artifacts
+foreach ($artifact in @("README.md", "PLAN.md", "STATUS.md")) {
+    if (-not (Test-Path $artifact)) {
+        [WARN] "Missing artifact: $artifact"
+    }
+}
+
+# Step 6: Check for project skills
+if (Test-Path ".github/copilot-skills/") {
+    Get-ChildItem ".github/copilot-skills/" -Filter "*.skill.md" | ForEach-Object {
+        [INFO] "Found skill: $($_.Name)"
+    }
+} else {
+    [INFO] "No project skills directory (.github/copilot-skills/)"
+}
+
+# Bootstrap complete
+[INFO] "Session ready. Use `$session.guide` for all query patterns and write rules."
+```
+
+**Do NOT proceed until:**
+- [ ] API call returned status 200
+- [ ] `$session.guide` contains expected sections (identity, query_patterns, write_cycle, etc.)
+- [ ] Layer count verified (warning acceptable, but must be reported)
+- [ ] All project artifacts detected (or explained why missing)
+
+---
+
+### Category Runbooks (Use These Patterns)
+
+The `/model/user-guide` endpoint provides deterministic workflows for 6 common scenarios. **ALWAYS query user-guide first** before writing to these layers.
+
+#### 1. Session Tracking (`session_tracking`)
+**Layer**: `project_work` | **ID Format**: `{project_id}-{YYYY-MM-DD}`
+
+```powershell
+# 5-Step DPDCA Pattern (from $session.userGuide.category_instructions.session_tracking)
+GET /model/projects/{project_id}              # DISCOVER: Verify project exists
+GET /model/project_work/{id}                  # DISCOVER: Check if session exists (404 OK)
+PUT /model/project_work/{id} -Headers @{      # DO: Create/update session
+    'X-Actor' = 'agent:copilot'
+} -Body @{ project_id, current_phase, session_summary, tasks, metrics }
+GET /model/project_work/{id}                  # CHECK: Verify write (row_version++)
+POST /model/admin/commit                      # ACT: Validate consistency
+```
+
+**Anti-Trash Rules**: No duplicate dates per project â€¢ session_summary must have completed_tasks + next_steps â€¢ tasks array non-empty â€¢ metrics include tests_passing, tests_added, files_changed â€¢ current_phase matches project
+
+**Common Mistakes**: Using POST (not supported) â€¢ Forgetting X-Actor header â€¢ Not verifying project exists â€¢ Duplicate dates â€¢ Skipping admin/commit
+
+#### 2-6. Other Categories
+**Sprint Tracking**: `$session.userGuide.category_instructions.sprint_tracking` (sprints layer)  
+**Evidence Tracking**: `$session.userGuide.category_instructions.evidence_tracking` (evidence layer - immutable)  
+**Governance Events**: `$session.userGuide.category_instructions.governance_events` (verification_records, quality_gates, decisions, risks)  
+**Infra Observability**: `$session.userGuide.category_instructions.infra_observability` (infrastructure_events, agent_execution_history, deployment_records)  
+**Ontology Domains**: `$session.userGuide.category_instructions.ontology_domains` (12-domain reasoning - see [USER-GUIDE.md](../../37-data-model/USER-GUIDE.md))
+
+**Workflow**: For ANY data model operation, query the relevant category in user-guide FIRST. This prevents "trash can" data and follows proven patterns.
+
+---
+
+### Encoding & Output
+
+**ASCII-ONLY -- ABSOLUTE RULE -- NO EXCEPTIONS**
+
+This applies to every file created or edited: .md, .ps1, .py, .ts, .json, .yaml, .txt, every string literal, log line, comment, commit message.
+
+**Forbidden output:**
+- Emoji (any Unicode codepoint above U+007F)
+- Unicode arrows -- use ASCII `->` instead
+- Unicode dashes -- use `--` instead
+- Curly quotes -- use `"` or `'` instead
+- Non-breaking spaces
+- PowerShell backtick (`) line continuation -- see PUT Rule 7
+- UTF-8 BOM in any text file
+
+**Allowed output tokens**: `[PASS]` / `[FAIL]` / `[WARN]` / `[INFO]`
+
+```python
+# [FORBIDDEN] -- causes UnicodeEncodeError in enterprise Windows
+print("success")   # with any emoji or unicode symbol
+
+# [REQUIRED] -- ASCII only
+print("[PASS] Done")
+print("[FAIL] Failed")
+print("[INFO] Wait...")
+```
+
+### Python Environment
+
+```powershell
+# DON'T use bare python; use venv executable
+C:\eva-foundry\.venv\Scripts\python.exe
+```
+
+### Azure Sandbox (marco-sandbox)
+
+- **Foundry**: `https://marco-sandbox-foundry.cognitiveservices.azure.com/`
+- **Models**: gpt-4o (20K TPM), gpt-4o-mini (50K TPM), gpt-5.1-chat (100K TPM)
+- **Key retrieval**: `az cognitiveservices account keys list --name marco-sandbox-foundry --resource-group EsDAICoE-Sandbox --query "key1" -o tsv`
+
+### Azure Best Practices
+
+Consult `C:\eva-foundry\18-azure-best/` (32 entries: WAF, security, AI, IaC, cost) before design decisions.
+
+---
+
+

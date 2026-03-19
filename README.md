@@ -1,5 +1,31 @@
 # EVA DA XML Ingestion Evidence System
 
+# 20-assistme
+
+<!-- Placeholders: 20-assistme = project folder name (e.g., "37-data-model", "48-eva-veritas") -->
+
+**Template Version**: v5.0.0 (Session 44 - Governance Template Consolidation)  
+**Part of EVA Foundry Workspace** | [Data Model](https://msub-eva-data-model.victoriousgrass-30debbd3.canadacentral.azurecontainerapps.io/model/projects/20-assistme) | [Veritas Audit](#veritas-audit)  
+**Workspace Skills**: @sprint-advance | @progress-report | @gap-report | @sprint-report | @veritas-expert
+
+---
+
+## EVA Quick Links
+
+| Resource | Link |
+|----------|------|
+| **Project Record** | `GET https://msub-eva-data-model.victoriousgrass-30debbd3.canadacentral.azurecontainerapps.io/model/projects/20-assistme` |
+| **Live Session Data** | `GET .../model/project_work/?project_id=20-assistme&$orderby=id%20desc&$limit=10` |
+| **Veritas Audit** | Run `audit_repo` MCP tool on `C:\eva-foundry\20-assistme` |
+| **Trust Score** | Run `get_trust_score` MCP tool on `C:\eva-foundry\20-assistme` |
+| **Sync to Model** | Run `sync_repo` MCP tool (full paperless DPDCA audit + write-back) |
+| **Governance** | [PLAN.md](./PLAN.md) \| [STATUS.md](./STATUS.md) \| [ACCEPTANCE.md](./ACCEPTANCE.md) |
+| **Instructions** | [.github/copilot-instructions.md](./.github/copilot-instructions.md) |
+
+---
+
+
+
 ## Overview
 
 This directory contains a comprehensive evidence-based investigation system for proving how EVA Domain Assistant ingests XML files and diagnosing why XML files fail.
@@ -8,31 +34,31 @@ This directory contains a comprehensive evidence-based investigation system for 
 
 ---
 
-## 📁 Structure
+## Structure
 
 ```
 docs/evidence/
-  ├── README.md                           ← This file
-  ├── assistme-xml-ingestion-proof.md     ← Main evidence report (fill in after running scripts)
-  ├── xml-output-contract.md              ← How EVA DA processes XML (code analysis)
-  ├── xml-validation-checklist.md         ← Requirements for valid XML
-  └── out/                                ← Evidence outputs (JSON + Markdown)
-      ├── group_resources_*.json/md
-      ├── assistme_statuslog_*.json/md
-      ├── appinsights_assistme_*.json/md
-      └── search_index_assistme_*.json/md
+   README.md                               # This file
+   assistme-xml-ingestion-proof.md         # Main evidence report (fill in after running scripts)
+   xml-output-contract.md                  # How EVA DA processes XML (code analysis)
+   xml-validation-checklist.md             # Requirements for valid XML
+   out/                                    # Evidence outputs (JSON + Markdown)
+         group_resources_*.json/md
+         assistme_statuslog_*.json/md
+         appinsights_assistme_*.json/md
+         search_index_assistme_*.json/md
 
 tools/evidence/
-  ├── README.md                           ← How to run scripts
-  ├── discover_group_resources.py         ← Query Cosmos for resource mappings
-  ├── query_statuslog_for_assistme.py     ← Query status logs for AssistMe XML
-  ├── appinsights_trace_assistme_ingestion.py  ← Query App Insights traces
-  └── search_index_probe.py               ← Query Azure AI Search index
+   README.md                               # How to run scripts
+   discover_group_resources.py             # Query Cosmos for resource mappings
+   query_statuslog_for_assistme.py         # Query status logs for AssistMe XML
+   appinsights_trace_assistme_ingestion.py # Query App Insights traces
+   search_index_probe.py                   # Query Azure AI Search index
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -69,7 +95,7 @@ Fill in evidence sections in:
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Main Documents
 
@@ -85,7 +111,7 @@ See [tools/evidence/README.md](../../tools/evidence/README.md) for detailed scri
 
 ---
 
-## 🔍 Evidence Sources
+## Evidence Sources
 
 ### Azure Resources
 
@@ -105,15 +131,15 @@ See [tools/evidence/README.md](../../tools/evidence/README.md) for detailed scri
 
 ---
 
-## ✅ What This System Proves
+## What This System Proves
 
 ### 1. How AssistMe XML Was Ingested (November 2025)
 
 **Evidence**:
-- ✅ Status log entries showing "Complete" state
-- ✅ Search index documents containing extracted content
-- ✅ Application Insights traces showing successful parsing
-- ✅ Blob chunks created in content container
+- Status log entries showing "Complete" state
+- Search index documents containing extracted content
+- Application Insights traces showing successful parsing
+- Blob chunks created in content container
 
 **Documented in**: [assistme-xml-ingestion-proof.md](./assistme-xml-ingestion-proof.md) Part 1
 
@@ -122,30 +148,30 @@ See [tools/evidence/README.md](../../tools/evidence/README.md) for detailed scri
 ### 2. What EVA DA Does with XML
 
 **Evidence**:
-- ✅ Code analysis of `partition_xml()` function
-- ✅ Chunking logic with `chunk_by_title()`
-- ✅ Search index schema showing preserved fields
-- ✅ Comparison of input XML vs. indexed content
+- Code analysis of `partition_xml()` function
+- Chunking logic with `chunk_by_title()`
+- Search index schema showing preserved fields
+- Comparison of input XML vs. indexed content
 
 **Documented in**: 
 - [assistme-xml-ingestion-proof.md](./assistme-xml-ingestion-proof.md) Part 2
 - [xml-output-contract.md](./xml-output-contract.md)
 
 **Key Findings**:
-- ✅ Extracts plain text from XML elements
-- ✅ Chunks into 1500-2000 character segments
-- ✅ Preserves file metadata (name, URI, path)
-- ❌ Does NOT preserve XML tags, attributes, or structure
+- Extracts plain text from XML elements
+- Chunks into 1500-2000 character segments
+- Preserves file metadata (name, URI, path)
+- Does NOT preserve XML tags, attributes, or structure
 
 ---
 
 ### 3. Why New XML Fails
 
 **Evidence**:
-- ✅ Status log error messages
-- ✅ Application Insights exception traces
-- ✅ XML validation rules from code analysis
-- ✅ Comparison with working AssistMe XML
+- Status log error messages
+- Application Insights exception traces
+- XML validation rules from code analysis
+- Comparison with working AssistMe XML
 
 **Documented in**:
 - [assistme-xml-ingestion-proof.md](./assistme-xml-ingestion-proof.md) Part 3
@@ -160,7 +186,7 @@ See [tools/evidence/README.md](../../tools/evidence/README.md) for detailed scri
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### No Results from Scripts
 
@@ -186,7 +212,7 @@ See [tools/evidence/README.md](../../tools/evidence/README.md) for detailed scri
 **Fix**:
 ```powershell
 az login
-# Verify roles in Azure Portal → IAM
+# Verify roles in Azure Portal / IAM
 ```
 
 ---
@@ -210,29 +236,29 @@ LOG_ANALYTICS_WORKSPACE_ID=<workspace-id>
 
 ---
 
-## 📊 Workflow: From Evidence to Conclusion
+## Workflow: From Evidence to Conclusion
 
 ```
 1. Run Evidence Scripts
-   ↓
+   ->
 2. Review Markdown Reports
-   ↓
+   ->
 3. Identify Error Messages/Patterns
-   ↓
+   ->
 4. Compare with Validation Checklist
-   ↓
+   ->
 5. Update assistme-xml-ingestion-proof.md
-   ↓
+   ->
 6. Formulate Concrete Diagnosis
-   ↓
+   ->
 7. Fix XML Issues
-   ↓
+   ->
 8. Re-test Ingestion
 ```
 
 ---
 
-## 📝 Next Steps
+## Next Steps
 
 ### For Your Investigation
 
@@ -266,7 +292,7 @@ LOG_ANALYTICS_WORKSPACE_ID=<workspace-id>
 
 ---
 
-## 📖 Additional Resources
+## Additional Resources
 
 - **EVA DA Architecture**: See `analysis-output/SYSTEM-DOCUMENTATION-COMPREHENSIVE.md`
 - **Pipeline Details**: See `docs/features/features.md`
@@ -274,7 +300,7 @@ LOG_ANALYTICS_WORKSPACE_ID=<workspace-id>
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 To add new evidence scripts:
 
@@ -286,7 +312,7 @@ To add new evidence scripts:
 
 ---
 
-## 📅 Maintenance
+## Maintenance
 
 - **Update scripts** when Azure resource names change
 - **Update code analysis** when FileLayoutParsingOther function changes

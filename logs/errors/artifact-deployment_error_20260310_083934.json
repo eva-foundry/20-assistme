@@ -1,0 +1,14 @@
+{
+    "component":  "artifact-deployment",
+    "stack_trace":  "at Start-ArtifactDeployment, C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\scripts\\deployment\\Apply-Project07-Artifacts.ps1: line 1131\r\nat \u003cScriptBlock\u003e, C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\scripts\\deployment\\Apply-Project07-Artifacts.ps1: line 1421",
+    "category_info":  "OperationStopped: (Could not find ...Path parameter.:String) [], RuntimeException",
+    "timestamp":  "2026-03-10T08:39:34.7183961-03:00",
+    "error_type":  "RuntimeException",
+    "context":  {
+                    "operation":  "artifact_deployment",
+                    "target_path":  "C:\\eva-foundry\\eva-foundry\\20-assistme",
+                    "source_path":  null,
+                    "dry_run":  false
+                },
+    "error_message":  "Could not find Project 07 artifacts. Specify -SourcePath parameter."
+}

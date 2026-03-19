@@ -1,0 +1,10 @@
+﻿{
+    "context":  "part1_extraction_validation_failed",
+    "timestamp":  "2026-03-10T08:41:00.7959744-03:00",
+    "component":  "artifact-deployment",
+    "environment":  {
+                        "user":  "marco",
+                        "os_version":  "10.0.26200.0",
+                        "machine":  "MSILAPTOP"
+                    }
+}

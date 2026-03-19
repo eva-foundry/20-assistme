@@ -1,0 +1,14 @@
+{
+    "component":  "artifact-deployment",
+    "stack_trace":  "at New-Part1Content, C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\scripts\\deployment\\Apply-Project07-Artifacts.ps1: line 729\r\nat Start-ArtifactDeployment, C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\scripts\\deployment\\Apply-Project07-Artifacts.ps1: line 1292\r\nat \u003cScriptBlock\u003e, C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\scripts\\deployment\\Apply-Project07-Artifacts.ps1: line 1421",
+    "category_info":  "OperationStopped: (CRITICAL: Extra...d wrong marker.:String) [], RuntimeException",
+    "timestamp":  "2026-03-10T08:41:11.5393443-03:00",
+    "error_type":  "RuntimeException",
+    "context":  {
+                    "operation":  "artifact_deployment",
+                    "target_path":  "C:\\eva-foundry\\eva-foundry\\20-assistme",
+                    "source_path":  "C:\\eva-foundry\\eva-foundry\\07-foundation-layer\\templates",
+                    "dry_run":  false
+                },
+    "error_message":  "CRITICAL: Extracted PART 1 has only 159 lines (expected \u003e200). Regex matched wrong marker."
+}
